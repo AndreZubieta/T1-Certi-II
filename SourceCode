@@ -1,0 +1,20 @@
+lados_iguales = 0
+
+a = input("lado a: ")
+b = input("lado b: ")
+
+if b == a: 
+    lados_iguales += 1
+    
+c = input("lado c: ")
+if c == a or c == b: 
+    lados_iguales += 1
+    
+if lados_iguales == 0:
+    print("Es un triángulo escaleno")
+    
+elif lados_iguales == 1:
+    print("Es un triángulo isóceles")
+    
+elif lados_iguales == 2:
+    print("Es un triángulo equilátero")
